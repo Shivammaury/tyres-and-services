@@ -1,0 +1,592 @@
+:root{
+    --primary-color: #130F26;
+    --seconday-color: #ed1c24;
+    --dis-text-color: #130f26ab;
+    --white-color: #fff;
+    --green-color: #4CA72C;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f6f9;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+p{
+    margin: 0;
+}
+.glb-shadow{ 
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.shree-nav {
+    padding: 1px;
+    box-shadow: rgb(9 30 66 / 13%) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 0px;
+}
+.nav-icon{
+    margin-left: 6rem;
+    cursor: pointer;
+}
+.nav-icon span{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.nav-icon i{
+    font-size: 18px !important;
+    padding-right: 5px;
+    font-weight: 500;
+    color: var(--dis-text-color);
+}
+.navbar-nav .nav-item a{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+    
+}
+.nav-link:hover .dropdown-menu{
+    display: block !important;
+}
+.rev-heading2{
+    font-size: 16px;
+    color: var(--primary-color);
+}
+#nav-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+.main-body{
+    margin-top: 60px;
+}
+button.navbar-toggler {
+    border: none;
+}
+.nav-item{
+    position: relative;
+}
+.nav-item:hover::before {
+    content: "";
+    width: 80%;
+    left: 8px;
+    position: absolute;
+    background-color: var(--seconday-color);
+    height: 1px;
+    bottom: 5px;
+    /* display: none; */
+}
+
+
+/* banner section CSS  */
+
+.banner-box{
+    background-color: var(--white-color)
+}
+.banner .banner-heading h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color-);
+
+}
+.banner-heading i{
+    color: var(--green-color);
+    padding-right: 3px;
+    position: relative;
+}
+.banner-heading i:after {
+    content: "✓";
+    color: var(--white-color);
+    font-size: 8px;
+    top: 3px;
+    left: 4px;
+    position: absolute;
+}
+.banner-heading .verifiy{
+    color: var(--green-color);
+}
+.m-veri{
+    position: relative;
+    display: none;
+}
+.rating span{
+    margin-right: 13px;
+}
+.rating .r-number {
+    font-size: 12px;
+    color: var(--white-color);
+    background-color: var(--green-color);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+.r-star i{
+    color: #fcc932;
+    font-size: 12px;
+}
+
+.r-revie{
+    text-decoration: underline;
+    font-size: 14px;
+
+}
+.rating div{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 4px 6px;
+}
+.rating div:hover{
+    background-color: #d3d4d5;
+    border-color: #d3d4d5;
+}
+.shop-details .location{
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.shop-ds span{
+    margin-left: 25px;
+}
+.shop-ds span i{
+    font-size: 22px;
+    color: #939393;
+    margin-left: 10px;
+}
+.shop-details .time{
+    font-size: 14px;
+    color: var(--dis-text-color);
+}
+.primary-btn{
+    border: 1px solid;
+    border-color: var(--seconday-color);
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--seconday-color);
+    font-size: 14px;
+    padding: 10px 47px;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+.primary-btn:hover{
+    background-color: var(--seconday-color);
+    color: var(--white-color);
+    transition: all .5s ease;
+}
+
+.shop-img a{
+    margin-right: 30px;
+}
+
+/* review css */
+.rev-heading{
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.review-box .profile img{
+    width: 36px;
+    height: 36px;
+}
+.review-box .review-des{
+    color: var(--dis-text-color);
+}
+.review-box{
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/* deal css start here  */
+.deal-sec{
+    background-color: var(--white-color);
+}
+.deal-box p{
+    color: var(--dis-text-color);
+}
+.deal-box {
+    border: 1px solid #dee2e6;
+    display: grid;
+    justify-content: center;
+}
+.deal-box img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 25px;
+}
+.deal-slider a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+/* services css area  */
+.services{
+    background-color: var(--white-color);
+}
+.services-box{
+    border: 1px solid #dee2e6;
+    margin-right: 10px;
+    display: grid !important;
+    justify-content: center;
+}
+.services-main .slick-track{
+    margin-left: 0 !important;
+}
+.services-box img{
+    width: 100px;
+}
+.book-btn {
+    background-color: var(--seconday-color);
+    color: var(--white-color);
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: var(--seconday-color);
+    padding: 6px 15px;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+.book-btn:hover{
+    background-color: transparent;
+    color: var(--seconday-color);
+    border: 1px solid;
+    border-color: var(--seconday-color);
+    transition: all .5s ease;
+}
+
+/* Tyres sold by CSS Area  */
+.filter-box {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  .filt{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.show {
+    display: block;
+}
+  .filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    color: var(--dis-text-color);
+    cursor: pointer;
+  }
+  .filter-btn:hover{
+    background-color: var(--seconday-color);
+    color: var(--white-color);
+  }
+  button.dropbtn {
+    border: 1px solid;
+    border-color: var(--dis-text-color);
+    outline: none;
+    padding: 10px 57px;
+}
+input#searchInput {
+    height: 32px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+    border-color: var(--dis-text-color);
+}
+
+  .dropdown-content .dropdown-option{
+    text-align: left;
+  }
+  .dropdown-content li{
+    padding: 5px;
+    cursor: pointer;
+  }
+  .content{
+    padding: 8px;
+    position: relative;
+  }
+  .sold-box{
+    background-color: var(--white-color);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s ease-in;
+  }
+  .sold-box:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    transition: all .3s ease-in;
+  }
+  .sold-box .brand{
+    width: 60px;
+  }
+  .sold-box .type-name{
+    color: var(--dis-text-color);
+  }
+  .sold-box .price{
+    font-size: 16px;
+  }
+  .sold-box .sold-offer{
+    color: var(--green-color);
+    font-size: 11px;
+  }
+  .sold-box .tyre-type{
+    font-size: 12px;
+    color: var(--dis-text-color);
+  }
+  .sold-box .sold-rt{
+    font-size: 12px;
+    color: var(--dis-text-color);
+  }
+  .sold-box .sold-rt span {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    font-size: 14px;
+    padding: 0px 4px;
+    border-radius: 3px;
+    margin-right: 8px;
+    height: 17px;
+}
+.sold-box .sold-rt span i{
+    font-size: 11px;
+    margin-right: 2px;
+    
+}
+.sold-ri{
+    position: relative;
+}
+.sold-box .tyre {
+    position: absolute;
+    left: auto;
+    right: -66px;
+    overflow: hidden;
+    bottom: -45px;
+    height: auto;
+    width: 170px;
+}
+.sold-ri p {
+    position: absolute;
+    top: -16px;
+    background-color: #FFEAAA;
+    width: max-content;
+    right: -4px;
+    padding: 0px 3px;
+    border-radius: 0 0 0 3px;
+    color: var(--primary-color);
+}
+.sold-ri i{
+    position: relative;
+    margin-right: 2px;
+}
+.sold-ri i:after {
+    content: "✓";
+    color: var(--white-color);
+    font-size: 8px;
+    top: 3px;
+    left: 4px;
+    position: absolute;
+}
+#loadMore{
+    text-decoration: none;
+    padding: 10px 25px;
+}
+.tongle-nav{
+    color: var(--dis-text-color);
+}
+.tongle-nav a{
+    text-decoration: none;
+    color: var(--dis-text-color);
+}
+.tongle-nav a:hover{
+    color: var(--seconday-color);
+}
+
+
+
+
+
+
+
+/* Payment css start here  */
+.payment{
+    background-color: var(--white-color);
+}
+.payment-med ul li{
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+}
+.payment-med ul{
+    margin-bottom: 7px;
+}
+.payment-med ul li::before {
+    position: absolute;
+    content: "✔";
+    color: var(--green-color);
+    font-size: 19px;
+    font-weight: 600;
+    left: -29px;
+    top: 0px;
+    rotate: 20deg;
+}
+
+
+/* question about Tyres css start area  */
+.question{
+    background-color: #FFEAAA;
+}
+.aue-sec{
+    color: var(--dis-text-color);
+}
+input.askqus {
+    width: 100%;
+    box-shadow: 0px 2px 4px #ffca28;
+    border: 1px solid #FFCA28;
+    border-radius: 40px;
+    height: 45px;
+    padding-left: 22px;
+    margin-right: 15px;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 1px solid #FFCA28 !important;
+  }
+.ques-img{
+    width: 80px;
+}
+/* footer css stert here  */
+.footer{
+    background-color: var(--white-color);
+}
+.foo-logo img{
+    width: 100px;
+}
+.logo-sec{
+    border: 1px solid #dee2e6;
+    border-right: none;
+    border-left: none;
+}
+.social i {
+    font-size: 22px;
+    color: var(--dis-text-color);
+    margin-right: 15px;
+}
+ul li{
+    list-style: none;
+}
+footer ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+footer .copyright p{
+    color: var(--dis-text-color);
+}
+footer a{
+    text-decoration: none;
+    color: var(--dis-text-color);
+    line-height: 1.4rem;
+}
+footer a:hover{
+    color: var(--seconday-color);
+}
+
+
+/* Media query css  */
+@media (max-width: 575.98px) {
+    .m-veri i{
+        color: var(--white-color);
+        padding-right: 3px;
+        position: relative;
+    }
+    .m-veri{
+        display: block;
+    }
+    .m-veri i:after {
+        content: "✓";
+        color: var(--green-color);
+        font-size: 8px;
+        top: 3px;
+        left: 4px;
+        position: absolute;
+    }
+    .m-veri .verifiy {
+        background-color: var(--green-color);
+        width: fit-content;
+        padding: 2px 5px;
+        border-radius: 4px;
+        color: var(--white-color);
+        font-size: 12px;
+        position: absolute;
+        top: -40px;
+        left: 0;
+    }
+}
+@media (max-width: 767.98px) {
+    .review{
+        margin-bottom: 0 !important;
+    }
+    .banner-main{
+        flex-direction: column-reverse;
+    }
+    .ques-img{
+        width: auto;
+        margin-top: 10px;
+    }
+    .aue-sec{
+        justify-content: space-evenly;
+    }
+    .question-sec{
+        justify-content: center;
+    }
+    .aue-sec-first{
+        padding: 0;
+    }
+    .shop-img a {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin-right: unset;
+        margin-bottom: 20px;
+    }
+    .shop-img{
+        margin-top: 5px !important;
+    }
+    .shop-img img{
+        width: 98%;
+    }
+    .sold-ri p {
+        top: -217px;
+    }
+    .filter-box{
+        position: fixed;
+        bottom: -20px;
+        z-index: 99;
+        background: #f0f0f0;
+    }
+    
+}
+@media (max-width: 600px) {
+    .dropdown-content {
+        position: absolute; /* Keep it absolute to adjust positioning */
+        width: 100%; /* Full width for mobile view */
+        top: auto; /* Remove top positioning */
+        bottom: 100%; /* Position above the button */
+        box-shadow: none; /* Remove shadow for a cleaner look */
+    }
+}
